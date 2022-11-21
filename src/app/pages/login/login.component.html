@@ -1,0 +1,74 @@
+<div class="row login_wrapper">
+  <div class="col-6 login_sec">
+    <div class="row header"></div>
+    <div class="row login_card align-items-center">
+      <form [formGroup]="signOnForm" class="text-left">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            id=""
+            placeholder="Username"
+          />
+          <br />
+          <div class="password-input" style="position: relative">
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id=""
+              placeholder="Password"
+            />
+            <a
+              href="#"
+              class="hide-btn"
+              style="
+                position: absolute;
+                top: 0;
+                right: 0px;
+                z-index: 9999;
+                color: #000;
+                text-decoration: none;
+                font-size: 12px;
+                text-transform: capitalize;
+              "
+              ><i
+                class="fa fa-eye-slash"
+                aria-hidden="true"
+                style="margin-right: 5px"
+              ></i
+              >hide</a
+            >
+          </div>
+          <br />
+          <div class="check-box" style="margin-bottom: 30px">
+            <input type="checkbox" id="" name="" value="" />
+            &nbsp;
+            <label for="" style="text-transform: capitalize">remember me</label>
+          </div>
+        </div>
+      </form>
+      <app-lsbutton
+        style="text-align: center"
+        className="btn btn-outline-primary "
+        color="blue"
+        text="Sign On"
+        (btnClick)="onLoginClicked()"
+      ></app-lsbutton>
+    </div>
+
+    <div class="row footer_reg align-items-end">
+      <app-footer class="align-items-end"></app-footer>
+    </div>
+  </div>
+  <div class="col-6 hero_bg">
+    <div class="image_bg" style="margin-right: -12px">
+      <img
+        class="hero_img"
+        src="../../../assets/hero-image.png"
+        alt="hero-image"
+      />
+    </div>
+  </div>
+</div>

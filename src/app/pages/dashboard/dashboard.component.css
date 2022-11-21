@@ -1,0 +1,17 @@
+.icons_arrow {
+  /* max-width: 40%; */
+  max-width: 50px;
+  border-radius: 7px;
+  box-shadow: 0px 2px 0px;
+  margin-bottom: -15%;
+}
+
+.icon_span {
+  font-size: 11px;
+}
+
+.ribbon_i {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}

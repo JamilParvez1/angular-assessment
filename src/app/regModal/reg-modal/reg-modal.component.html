@@ -1,0 +1,50 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <h1>New User</h1>
+        <form [formGroup]="signUpForm" class="text-left">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name="username"
+              id=""
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              class="form-control"
+              name="password"
+              id=""
+              placeholder="Password"
+            />
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id=""
+              placeholder="Email"
+            />
+          </div>
+          <button class="btn">Cancel</button>
+          <button class="btn">Register Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
